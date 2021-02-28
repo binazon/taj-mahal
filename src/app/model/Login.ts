@@ -1,4 +1,6 @@
-class Login {
+import { Tourist } from "./Tourist";
+
+export class Login {
     private _tourist: Tourist;
     private _passwd: String;
 

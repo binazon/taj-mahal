@@ -8,7 +8,6 @@ import { finalize, tap } from 'rxjs/operators';
 })
 export class StatusService {
 
-
   private link: String = "http://localhost:8080";
 
   constructor(private http: HttpClient) { }

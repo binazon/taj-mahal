@@ -49,5 +49,10 @@
   "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.7.",
   "main": "karma.conf.js",
   "author": "kenny binazon",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": "git+https://github.com/binazon/taj-mahal.git",
+  "bugs": {
+    "url": "https://github.com/binazon/taj-mahal/issues"
+  },
+  "homepage": "https://github.com/binazon/taj-mahal#readme"
 }

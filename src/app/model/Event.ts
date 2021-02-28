@@ -1,14 +1,13 @@
-class Events {
-    private _idEvent: Number;
+export class Events {
+    private _idEvent?: Number;
     private _nameEvent: String;
     private _dateStartEvent: Date;
     private _dateEndEvent: Date;
     private _amountEvent: Number;
     private _image: String;
 
-    constructor(idEvent: Number, nameEvent: String, dateStartEvent: Date, dateEndEvent: Date,
+    constructor(nameEvent: String, dateStartEvent: Date, dateEndEvent: Date,
         amountEvent: Number, image: String) {
-        this._idEvent = idEvent;
         this._nameEvent = nameEvent;
         this._dateStartEvent = dateStartEvent;
         this._dateEndEvent = dateEndEvent;
@@ -16,14 +15,9 @@ class Events {
         this._image = image;
     }
 
-
     public get idEvent(): Number {
         return this._idEvent;
     }
-    public set idEvent(value: Number) {
-        this._idEvent = value;
-    }
-
 
     public get nameEvent(): String {
         return this._nameEvent;

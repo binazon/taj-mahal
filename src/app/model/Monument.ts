@@ -1,19 +1,23 @@
-class Monument{
-    
+export class Monument {
+
+    private _idMonument?: Number;
     private _entitledMonument: String;
     private _adresseMonument: String;
     private _capacityMonument: Number;
     private _image: String;
 
 
-    constructor(_entitledMonument: String, _adresseMonument: String, _capacityMonument: Number, 
-        _image: String){
+    constructor(_entitledMonument: String, _adresseMonument: String, _capacityMonument: Number,
+        _image: String) {
         this._entitledMonument = _entitledMonument;
         this._adresseMonument = _adresseMonument;
         this._capacityMonument = _capacityMonument;
         this._image = _image;
     }
 
+    public get idMonument(): Number {
+        return this._idMonument;
+    }
 
     public get entitledMonument(): String {
         return this._entitledMonument;
@@ -21,14 +25,14 @@ class Monument{
     public set entitledMonument(value: String) {
         this._entitledMonument = value;
     }
-    
+
     public get adresseMonument(): String {
         return this._adresseMonument;
     }
     public set adresseMonument(value: String) {
         this._adresseMonument = value;
     }
-    
+
     public get capacityMonument(): Number {
         return this._capacityMonument;
     }
@@ -36,7 +40,7 @@ class Monument{
     public set capacityMonument(value: Number) {
         this._capacityMonument = value;
     }
-    
+
     public get image(): String {
         return this._image;
     }

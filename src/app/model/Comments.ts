@@ -1,20 +1,18 @@
-class Comments {
+import { Reservation } from "./Reservation";
 
-    private _idComment: Number;
+export class Comments {
+
+    private _idComment?: Number;
     private _message: String;
     private _reservation: Reservation;
 
-    constructor(idComment: Number, message: String, reservarion: Reservation) {
-        this._idComment = idComment;
+    constructor(message: String, reservarion: Reservation) {
         this._message = message;
         this._reservation = reservarion;
     }
 
     public get idComment(): Number {
         return this._idComment;
-    }
-    public set idComment(value: Number) {
-        this._idComment = value;
     }
 
     public get message(): String {

@@ -1,4 +1,4 @@
-class Tourist {
+export class Tourist {
     private _username: String;
     private _name: String;
     private _surname: String;

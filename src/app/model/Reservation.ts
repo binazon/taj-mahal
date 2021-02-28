@@ -1,21 +1,22 @@
-class Reservation {
+export class Reservation {
 
-    private _idReservation: Number;
+    private _idReservation?: Number;
     private _dateReservation: Date;
     private _amountReservation: Number;
     private _numberPerson: Number;
 
-
     constructor(
-        _idReservation: Number,
         _dateReservation: Date,
         _amountReservation: Number,
         _numberPerson: Number
     ) {
-        this._idReservation = _idReservation
         this._dateReservation = _dateReservation
         this._amountReservation = _amountReservation
         this._numberPerson = _numberPerson
+    }
+
+    public get idReservation(): Number {
+        return this._idReservation;
     }
 
     public get numberPerson(): Number {
@@ -38,14 +39,4 @@ class Reservation {
     public set dateReservation(value: Date) {
         this._dateReservation = value;
     }
-
-    public get idReservation(): Number {
-        return this._idReservation;
-    }
-    public set idReservation(value: Number) {
-        this._idReservation = value;
-    }
-
-
-
 }

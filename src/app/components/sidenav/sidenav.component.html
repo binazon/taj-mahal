@@ -3,7 +3,7 @@
         <button mat-icon-button (click)="snav.toggle()">
             <mat-icon>menu</mat-icon>
         </button>
-        <h1 class="example-app-name">Taj-Mahal</h1>
+        <h1 class="example-app-name">{{infos.entitledMonument}}</h1>
     </mat-toolbar>
 
     <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
@@ -13,8 +13,15 @@
                 <a mat-list-item routerLink="." *ngFor="let nav of fillerNav">{{nav}}</a>
             </mat-nav-list>
         </mat-sidenav>
-
+        
         <mat-sidenav-content>
+            <h2>Address : {{infos.adresseMonument}}</h2>
+            <h2>Capacity : {{infos.capacityMonument}}</h2>
+            <h2>Image : {{infos.image}}</h2>
+
+            <h1>Events</h1>
+
+
             <p *ngFor="let content of fillerContent">{{content}}</p>
         </mat-sidenav-content>
     </mat-sidenav-container>
