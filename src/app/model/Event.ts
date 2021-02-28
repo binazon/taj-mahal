@@ -1,19 +1,19 @@
-export class Events {
-    private _idEvent?: Number;
-    private _nameEvent: String;
-    private _dateStartEvent: Date;
-    private _dateEndEvent: Date;
-    private _amountEvent: Number;
-    private _image: String;
+export class Event {
+    public _idEvent?: Number;
+    public _nameEvent: String;
+    public _dateStartEvent: Date;
+    public _dateEndEvent: Date;
+    public _amountEvent: Number;
+    public _image: String;
 
-    constructor(nameEvent: String, dateStartEvent: Date, dateEndEvent: Date,
-        amountEvent: Number, image: String) {
-        this._nameEvent = nameEvent;
-        this._dateStartEvent = dateStartEvent;
-        this._dateEndEvent = dateEndEvent;
-        this._amountEvent = amountEvent;
-        this._image = image;
-    }
+    // constructor(nameEvent: String, dateStartEvent: Date, dateEndEvent: Date,
+    //     amountEvent: Number, image: String) {
+    //     this._nameEvent = nameEvent;
+    //     this._dateStartEvent = dateStartEvent;
+    //     this._dateEndEvent = dateEndEvent;
+    //     this._amountEvent = amountEvent;
+    //     this._image = image;
+    // }
 
     public get idEvent(): Number {
         return this._idEvent;
